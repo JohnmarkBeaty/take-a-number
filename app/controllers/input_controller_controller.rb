@@ -3,5 +3,7 @@ class InputControllerController < ApplicationController
   end
 
   def show
+    @person = Queuedperson.new
+
   end
 end
