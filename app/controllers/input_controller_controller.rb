@@ -4,6 +4,7 @@ class InputControllerController < ApplicationController
     @person = Queuedperson.new(queuedperson_params)
     @person.save
     twilio_sid = ENV['twilio_sid']
+
     twilio_token = ENV['twilio_token']
     twilio_phone_number = ENV['twilio_phone_number']
 
