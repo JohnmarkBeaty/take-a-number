@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'input_controller/create'
+  post 'input_controller/create'
 
   get 'input_controller/show'
 

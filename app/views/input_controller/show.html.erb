@@ -1,7 +1,7 @@
 <h1>InputController#show</h1>
 <p>Find me in app/views/input_controller/show.html.erb</p>
 
-<%= form_for @person, url: {action: "create"} do |f| %>
+<%= form_for :person, url: {action: "create"} do |f| %>
     <%= label_tag(:firstname, "First Name:") %>
     <%= f.text_field :firstname %>
     <%= label_tag(:lastname, "Last Name:") %>
