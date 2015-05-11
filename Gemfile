@@ -31,7 +31,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'pg'
+group :production do
+  gem 'pg'
+end
 
 gem 'twilio-ruby'
 
