@@ -1,0 +1,13 @@
+<h1>InputController#show</h1>
+<p>Find me in app/views/input_controller/show.html.erb</p>
+
+<%= form_tag("create", method: "get") do %>
+  <%= label_tag(:firstname, "First Name:") %>
+        <%= text_field_tag (:firstname) %>
+    <%= label_tag(:lastname, "Last Name:") %>
+        <%= text_field_tag (:lastname) %>
+    <%= label_tag(:phonenumber, "Phone Number:") %>
+        <%= text_field_tag (:phonenumber) %>
+    <%= submit_tag ("Done")%>
+<% end %>
+

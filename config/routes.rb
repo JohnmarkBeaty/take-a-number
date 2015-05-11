@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'input_controller/create'
+
+  get 'input_controller/show'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
