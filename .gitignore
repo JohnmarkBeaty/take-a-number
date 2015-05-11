@@ -20,3 +20,4 @@
 .idea/
 
 export_secrets.sh
+config/env.yml
