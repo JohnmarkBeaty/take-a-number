@@ -3,10 +3,10 @@ class InputControllerController < ApplicationController
     # render plain: params.inspect
     @person = Queuedperson.new(queuedperson_params)
     @person.save
-    twilio_sid = ENV['twilio_sid']
+    twilio_sid = ENV['TWILIO_SID']
 
-    twilio_token = ENV['twilio_token']
-    twilio_phone_number = ENV['twilio_phone_number']
+    twilio_token = ENV['TWILIO_TOKEN']
+    twilio_phone_number = ENV['TWILIO_PHONE_NUMBER']
 
     @twillo_clinet = Twilio::REST::Client.new twilio_sid, twilio_token
 
