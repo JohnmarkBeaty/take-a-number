@@ -4,4 +4,6 @@
 <% @queuedpersons.each do |qp| %>
 <p>Name: <%= qp.firstname %> <%= qp.lastname %> </p>
 <p>Phone Number: <%= qp.phonenumber %></p>
+    <%= button_to "Clear From Que", admin_queuedperson_path(qp), data: {:confirm => 'Are you sure?'}, :method => :delete %>
+    <%= button_to "Send Text", sendtext_admin_queuedperson_path(qp), data: {:confirm => 'Are you sure?'}, :method => :post %>
 <% end %>

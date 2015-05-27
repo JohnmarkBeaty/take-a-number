@@ -1,8 +1,16 @@
 Rails.application.routes.draw do
   post 'input_controller/create'
 
+
   get 'input_controller/show'
-  get 'admin/index'
+  scope 'admin', as: 'admin' do
+    resources :queuedpersons, :controller => "admin" do
+      post 'sendtext', on: :member
+    end
+
+  end
+
+  root to: "input_controller#show"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
