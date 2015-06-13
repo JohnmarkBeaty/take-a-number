@@ -1,4 +1,4 @@
-development.sqlite3 
+development.sqlite3
 
 /.bundle
 /log/*
@@ -8,5 +8,5 @@ development.sqlite3
 .idea/
 
 export_secrets.sh
-config/env.yml
+env.yml
 database.yml
