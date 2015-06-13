@@ -10,3 +10,6 @@ class CreateQueuedpeople < ActiveRecord::Migration
     end
   end
 end
+
+
+HIIII
